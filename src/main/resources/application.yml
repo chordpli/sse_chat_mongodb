@@ -1,7 +1,15 @@
+server:
+  servlet:
+    encoding:
+      force-response: true
+
 spring:
   data:
     mongodb:
       host: localhost
       port: 27017
       database: chatdb
-
+  thymeleaf:
+    prefix: classpath:/templates/
+    suffix: .html
+    cache: false
